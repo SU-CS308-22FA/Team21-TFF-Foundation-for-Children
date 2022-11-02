@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2022 at 06:15 PM
+-- Generation Time: Nov 02, 2022 at 10:57 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -35,13 +35,6 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `name`, `email`, `password_hash`) VALUES
-(0, 'Gönül Zeynep Perek', 'g.zeynepperek@gmail.com', '$2y$10$DP6tCt.lKJRrr.tvHR3yy.tLNqb1UB6LLxDf3yAoF4/lnjCo4hjiC');
-
---
 -- Indexes for dumped tables
 --
 
@@ -51,6 +44,16 @@ INSERT INTO `user` (`id`, `name`, `email`, `password_hash`) VALUES
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
