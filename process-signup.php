@@ -1,14 +1,11 @@
 <?php
+if (preg_match('~[0-9]+~', $_POST["name"])) {
+    die("Username shouldn't contain any number");
+}
 
-if (empty($_POST["name"])) {
+if  (empty($_POST["name"])) {
     die("Name is required");
 }
-
-
-if (preg_match('~[0-9]+~', $_POST["name"])) {
-    die("Username shouldn't contain any number");
-}
-
 
 if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     die("Valid email is required");

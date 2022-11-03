@@ -25,7 +25,7 @@ if (isset($_SESSION["user_id"])) {
 </head>
 <body>
     
-    <h1>Welcome to TFF for Children, Please Proceed to Log In or Sign Up</h1>
+    <h1>Welcome to TFF for Children</h1>
     
     <?php if (isset($user)): ?>
         
